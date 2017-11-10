@@ -4,7 +4,7 @@ import LanguagelistItem from './LanguagelistItem'
 
 const Languagelist = (props)=> {
   return (
-    <div>
+    <div className="list">
       {props.lang.map(l => <LanguagelistItem l={l} news={props.newButton}/>)}
     </div>
   )

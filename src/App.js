@@ -22,9 +22,9 @@ class App extends Component {
     return (
         <MuiThemeProvider>
           <div className="App">
-            <RaisedButton onClick={this.newsHandler} label="find daily news" primary={true} />
+            <RaisedButton onClick={this.newsHandler} label="find news" primary={true} />
             <Languagelist lang={this.state.lang} newButton={this.newsHandler}/>
-            <NewsBox news={this.state.lang[1]}/>
+            <NewsBox news={this.state.news}/>
           </div>
        </MuiThemeProvider>
     );

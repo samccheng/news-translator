@@ -12,7 +12,7 @@ const styles = {
 
 const LanguagelistItem = ({news, l})=> {
   return (
-    <div>
+    <div className="item">
       <RadioButtonGroup name="shipSpeed" defaultSelected="not_light">
         <RadioButton
           onClick={news}
