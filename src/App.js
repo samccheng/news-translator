@@ -4,6 +4,7 @@ import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import NewsButton from './components/Newsbutton'
 import Languagelist from './components/Languagelist'
 import NewsBox from './components/NewsBox'
+import apiKey from './api-key'
 
 class App extends Component {
   state = {
@@ -12,7 +13,7 @@ class App extends Component {
   }
 
   newsHandler = () => {
-    fetch()
+    fetch(`https://api.nytimes.com/svc/topstories/v2/home.json?api-key=${apiKey}`)
     .then( res => res.json())
     .then( data => this.setState({
       news: data.results
