@@ -12,7 +12,7 @@ class App extends Component {
   }
 
   newsHandler = () => {
-    fetch('https://api.nytimes.com/svc/topstories/v2/home.json?api-key=5a149821bf734c9db7b4c3e1032c1748')
+    fetch()
     .then( res => res.json())
     .then( data => this.setState({
       news: data.results
