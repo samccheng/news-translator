@@ -1,13 +1,10 @@
 import React from 'react';
-// import RaisedButton from 'material-ui/RaisedButton';
+import RaisedButton from 'material-ui/RaisedButton';
 
-const style = {
-  margin: 12,
-};
 
-const NewsButton = () => (
+const NewsButton = (props) => (
   <div>
-    <button>find news</button>
+    <RaisedButton onClick={props.click} label="get headlines" primary={true} />
   </div>
 );
 
