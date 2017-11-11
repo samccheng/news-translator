@@ -4,7 +4,7 @@ import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import NewsButton from './components/Newsbutton'
 import Languagelist from './components/Languagelist'
 import NewsBox from './components/NewsBox'
-import apiKey from './api-key'
+import apiKey from './api/api-key'
 
 class App extends Component {
   state = {
